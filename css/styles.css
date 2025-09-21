@@ -1,0 +1,50 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #e91e63;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header, .features {
+  padding: 2rem;
+  text-align: center;
+}
+
+button.cta, button.secondary {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.palette-editor {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.color-group {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  header, .features, .palette-editor {
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
